@@ -101,19 +101,19 @@
   "TV Packages":[
     {
       "Name": "English Package",
-      "Channels": "60",
+      "Channels": "30+ channels",
       "Price": "49 AED (VAT Inclusive)",
       "Time": "Monthly"
     },
     {
       "Name": "Asian Package",
-      "Channels": "100",
+      "Channels": "60+ channels",
       "Price": "69 AED (VAT Inclusive)",
       "Time": "Monthly"
     },
     {
       "Name": "Arabic Package",
-      "Channels": "100",
+      "Channels": "100+ channels",
       "Price": "100 AED (VAT Inclusive)",
       "Time": "Monthly"
     },
