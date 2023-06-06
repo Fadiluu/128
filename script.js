@@ -28,9 +28,9 @@ function postPaid(){
         select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PostPaid[i].Data+"</p\n>"
         select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
         select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PostPaid[i].Voice+"</p>\n"
-        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>"
+        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
         select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PostPaid[i].Price+"</p>\n"
-        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>"
+        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
         select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PostPaid[i].Time+"</p>\n"
         select[i].innerHTML+="<div class=\"sub__btn--right\"><button class=\"subscription__btn\">Subscribe</button></div>"      
     }
@@ -49,54 +49,56 @@ function prePaid(){
         select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PrePaid[i].Data+"</p\n>"
         select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
         select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PrePaid[i].Voice+"</p>\n"
-        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>"
+        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
         select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PrePaid[i].Price+"</p>\n"
-        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>"
+        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
         select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PrePaid[i].Time+"</p>\n"
         select[i].innerHTML+="<div class=\"sub__btn--right\"><button class=\"subscription__btn\">Subscribe</button></div>"      
     }
     
 
 }
-function tv(){
-    var arr = ["Data:","Voice:","Price:","Subscrition Period:"]
-    var select = document.querySelectorAll('.mobile__card')
+function wifi(){
+    var arr = ["Data:","Speed","Router:","Delivery:","Price:","Subscrition Period:"]
+    var select = document.querySelectorAll('.tv__wifi__card')
     for(var i=0;i<select.length;i++){
         select[i].innerHTML =""
     }
     for(var i=0;i<dataObj.Services.Mobile_Services.PostPaid.length;i++){
         var j=0
-        select[i].innerHTML+= "<h3>"+dataObj.Services.Mobile_Services.PostPaid[i].Name+"</h3>\n"
+        select[i].innerHTML+="<h3>"+dataObj.Services.TV_Wireless_Services.Home_Internet[i].Name+"</h3>\n"
         select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
-        select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PostPaid[i].Data+"</p\n>"
+        select[i].innerHTML+="<p>"+dataObj.Services.TV_Wireless_Services.Home_Internet[i].Data+"</p\n>"
         select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
-        select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PostPaid[i].Voice+"</p>\n"
-        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>"
-        select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PostPaid[i].Price+"</p>\n"
-        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>"
-        select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PostPaid[i].Time+"</p>\n"
+        select[i].innerHTML+="<p>"+dataObj.Services.TV_Wireless_Services.Home_Internet[i].Speed+"</p>\n"
+        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
+        select[i].innerHTML+="<p>"+dataObj.Services.TV_Wireless_Services.Home_Internet[i].Router+"</p>\n"
+        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
+        select[i].innerHTML+="<p>"+dataObj.Services.TV_Wireless_Services.Home_Internet[i].Delivery+"</p>\n"
+        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
+        select[i].innerHTML+="<p>"+dataObj.Services.TV_Wireless_Services.Home_Internet[i].Price+"</p>\n"
+        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
+        select[i].innerHTML+="<p>"+dataObj.Services.TV_Wireless_Services.Home_Internet[i].Time+"</p>\n"
         select[i].innerHTML+="<div class=\"sub__btn--right\"><button class=\"subscription__btn\">Subscribe</button></div>"      
     }
     
     
 }
-function wifi(){
-    var arr = ["Data:","Voice:","Price:","Subscrition Period:"]
-    var select = document.querySelectorAll('.mobile__card')
+function tv(){
+    var arr = ["Channels","Price:","Subscrition Period:"]
+    var select = document.querySelectorAll('.tv__wifi__card')
     for(var i=0;i<select.length;i++){
         select[i].innerHTML =""
     }
     for(var i=0;i<dataObj.Services.Mobile_Services.PostPaid.length;i++){
         var j=0
-        select[i].innerHTML+= "<h3>"+dataObj.Services.Mobile_Services.PostPaid[i].Name+"</h3>\n"
+        select[i].innerHTML+= "<h3>"+dataObj.Services.TV_Wireless_Services.TV_Packages[i].Name+"</h3>\n"
         select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
-        select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PostPaid[i].Data+"</p\n>"
+        select[i].innerHTML+="<p>"+dataObj.Services.TV_Wireless_Services.TV_Packages[i].Channels+"</p\n>"
         select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
-        select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PostPaid[i].Voice+"</p>\n"
-        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>"
-        select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PostPaid[i].Price+"</p>\n"
-        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>"
-        select[i].innerHTML+="<p>"+dataObj.Services.Mobile_Services.PostPaid[i].Time+"</p>\n"
+        select[i].innerHTML+="<p>"+dataObj.Services.TV_Wireless_Services.TV_Packages[i].Price+"</p>\n"
+        select[i].innerHTML+="<h3>"+arr[j++]+"</h3>\n"
+        select[i].innerHTML+="<p>"+dataObj.Services.TV_Wireless_Services.TV_Packages[i].Time+"</p>\n"
         select[i].innerHTML+="<div class=\"sub__btn--right\"><button class=\"subscription__btn\">Subscribe</button></div>"      
     }
     

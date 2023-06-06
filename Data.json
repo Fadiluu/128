@@ -60,7 +60,7 @@
   ]
   },
   "TV_Wireless_Services":{
-  "Home Internet": [
+  "Home_Internet": [
     {
       "Name": "Smart Home",
       "Data": "Unlimited",
@@ -98,7 +98,7 @@
       "Time": "Monthly"
     }
   ],
-  "TV Packages":[
+  "TV_Packages":[
     {
       "Name": "English Package",
       "Channels": "30+ channels",
