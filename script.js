@@ -1,3 +1,7 @@
+getdata();
+
+
+
 function getdata() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () { 
@@ -12,8 +16,12 @@ function getdata() {
 function processResult(xhttp) {
     var jsonText = xhttp.responseText;        // Get JSON text.     
     dataObj = JSON.parse(jsonText);   // convert the response text to JSON object.
+    postPaid()
+    wifi()
 }
-getdata();
+
+
+
 
 function postPaid(){
     var arr = ["Data:","Voice:","Price:","Subscrition Period:"]
@@ -105,14 +113,3 @@ function tv(){
     
 }
 
-
-
-
-
-
-
-// postPaidBtn = document.querySelector('.postpaid__btn')
-
-// postPaidBtn.addEventListener('click', function(){
-//     postPaid();
-// },{ once: true })
